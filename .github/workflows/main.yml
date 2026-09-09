@@ -65,7 +65,7 @@ jobs:
       - name: Establish Tailscale Connection
         run: |
           # Bringing up Tailscale using your Auth Key
-          & "$env:ProgramFiles\Tailscale\tailscale.exe" up --authkey="tskey-auth-k4XiRGr9mg11CNTRL-1UiTvU4FNe5TrQ8Vhscxe5frE1N9kxLL" --hostname=gh-runner-$env:GITHUB_RUN_ID
+          & "$env:ProgramFiles\Tailscale\tailscale.exe" up --authkey="tskey-auth-kMAsU6cGtE11CNTRL-RssJqvVURSM2FkHB8qM4SMT1BitwPhsg" --hostname=gh-runner-$env:GITHUB_RUN_ID
           
           # Wait for IP assignment
           $tsIP = $null
